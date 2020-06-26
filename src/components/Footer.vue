@@ -8,7 +8,7 @@
                   <h6>Monday - Friday:</h6>
                   <p>Between 9am to 5pm WAT</p>
               </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <h4>QUICK LINKS</h4>
                   <ul>
                       <li><router-link to="/">Home</router-link></li>
@@ -17,7 +17,7 @@
                       <li><router-link to="/">Create An Account</router-link></li>
                   </ul>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                   <h4>BANK PAYMENT DETAILS</h4>
                   <h6>Account Name: Africa Development Crowdfund Limited.</h6>
                   <h6>Account Number: 1016282563.</h6>
@@ -37,7 +37,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-12">
-                      <small>Copylright &copy; 2020 <span class="wrap">African Development Crowdfund Limited | <a href="">Privacy Policy</a> <a href="">Terms and Conditions</a></span></small>
+                      <small>Copylright &copy; 2020 <span class="wrap">African Development Crowdfund Limited | <a href="">Privacy Policy</a> | <a href="">Terms and Conditions</a></span></small>
                   </div>
               </div>
           </div>
@@ -56,9 +56,11 @@ export default {
 .footer{
     background: $secondary-color;
     color: #fff;
+    position: relative;
     // padding: 4rem 0;
     .wrapper{
         padding: 4rem 0;
+        position: relative;
         h4{
             font-weight: 900;
             color: $tertiary-color;
@@ -80,6 +82,9 @@ export default {
         background: $primary-color;
         padding-top: .8rem;
         padding-bottom: 1rem;
+        a{
+            color:#fff;
+        }
         .wrap{
             opacity: .7;
         }
@@ -93,7 +98,7 @@ export default {
     }
     .footer__bottom{
         text-align: center;
-        padding: 2rem 0 !important;
+        padding: 1rem 0 !important;
         a{
             color:#fff;
         }
