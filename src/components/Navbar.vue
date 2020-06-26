@@ -163,6 +163,7 @@ export default {
         margin: 0 auto !important;
         transition: 0.5s !important;
         top: 100%;
+        left: 7%;
         ul{
             flex-direction: column;
             li a{
