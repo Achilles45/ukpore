@@ -14,7 +14,10 @@
                   </ul>
               </div>
               <div @click="showNav()" class="navbar__toggler"> 
+                    <div class="holder d-flex justify-content-between align-items-center">
                     <i class="fa fa-bars"></i>
+                    <p class="pt-3 pl-2">Menu</p>
+                    </div>
               </div>
           </div>
       </div>
@@ -129,22 +132,28 @@ export default {
     transition: all ease-in .5s;
 }
 //MEDIA QUERIES
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1100px){
     .navbar__wrapper{
         padding: 2rem 0 !important;
     }
     .logo__img{
-        max-width: 250px !important;
+        max-width: 200px !important;
         height: auto;
+    }
+    .fa-bars{
+        color: $tertiary-color;
+    }
+    p{
+        color: #fff;
     }
     .menu{
         background-color: $primary-color;
         width: 85%;
         position: absolute;
-        height: 40vh !important;
+        height: 55vh !important;
         z-index: 100;
-        bottom: 0;
-        top: 12%;
+        top: 17%;
+        height: 100vh -50% !important;
         display: none;
         border-top: 3px solid $tertiary-color;
         padding: 0 1rem !important;
@@ -159,8 +168,9 @@ export default {
                 background: #008E51 !important;
                 color: #fff !important;
                 width: 90% !important;
-                display: block !important;
-                padding: .01rem 2rem !important;
+                display: inline-block !important;
+                padding: 0rem 2rem !important;
+                height: 3.5rem;
             }
         }
     }
