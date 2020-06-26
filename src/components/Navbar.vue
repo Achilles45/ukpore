@@ -62,6 +62,7 @@ export default {
 .navbar__wrapper{
     background: $primary-color;
     padding: .9rem 0;
+    position: relative;
     .navbar__holder{
         padding: 0 2rem;
         margin: 0 auto;
@@ -153,14 +154,15 @@ export default {
         background-color: $primary-color;
         width: 85%;
         position: absolute;
-        height: 55vh !important;
+        height: auto !important;
         z-index: 100;
-        top: 17%;
         height: 100vh -50% !important;
         display: none;
         border-top: 3px solid $tertiary-color;
         padding: 0 1rem !important;
         margin: 0 auto !important;
+        transition: 0.5s !important;
+        top: 100%;
         ul{
             flex-direction: column;
             li a{
