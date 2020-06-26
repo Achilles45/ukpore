@@ -37,7 +37,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-12">
-                      <small>Copylright &copy; 2020 <span class="wrap">African Development Crowdfund Limited</span></small>
+                      <small>Copylright &copy; 2020 <span class="wrap">African Development Crowdfund Limited | <a href="">Privacy Policy</a> <a href="">Terms and Conditions</a></span></small>
                   </div>
               </div>
           </div>
@@ -81,7 +81,7 @@ export default {
         padding-top: .8rem;
         padding-bottom: 1rem;
         .wrap{
-            opacity: .5;
+            opacity: .7;
         }
     }
 }
@@ -90,6 +90,13 @@ export default {
 @media only screen and (max-width: 600px){
     ul{
         padding-left: 2rem;
+    }
+    .footer__bottom{
+        text-align: center;
+        padding: 2rem 0 !important;
+        a{
+            color:#fff;
+        }
     }
 }
 </style>
