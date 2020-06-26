@@ -85,4 +85,11 @@ export default {
         }
     }
 }
+
+//MEDIA QUERIES
+@media only screen and (max-width: 600px){
+    ul{
+        padding-left: 2rem;
+    }
+}
 </style>

@@ -8,13 +8,13 @@
               <div class="menu">
                   <ul class="d-flex justify-content-between pt-3">
                       <li><router-link to="/" class="links">Home</router-link></li>
-                      <li><router-link to="/about" class="links">About Us</router-link></li>
-                      <li><router-link to="/contact" class="links">My Account</router-link></li>
-                      <li><router-link to="/signup" class="links create">Create an Account</router-link></li>
+                      <li><router-link to="/" class="links">About Us</router-link></li>
+                      <li><router-link to="/" class="links">My Account</router-link></li>
+                      <li><router-link to="/" class="links create">Create an Account</router-link></li>
                   </ul>
               </div>
-              <div @click="showNav()" class="navbar__toggler">
-                  <i class="fa fa-bars"></i>
+              <div @click="showNav()" class="navbar__toggler"> 
+                    <i class="fa fa-bars"></i>
               </div>
           </div>
       </div>
@@ -73,7 +73,7 @@ export default {
                 font-size: 1rem;
             }
             .logo__img{
-                max-width: 280px;
+                max-width: 320px;
                 height: auto;
             }
         }
@@ -89,7 +89,7 @@ export default {
             }
             .create{
                 padding: .6rem 2rem;
-                border-radius: 4px;
+                border-radius: 6px;
                 background: $secondary-color;
                 color: #fff;
                 font-weight: normal !important;
@@ -130,29 +130,37 @@ export default {
 }
 //MEDIA QUERIES
 @media only screen and (max-width: 600px){
+    .navbar__wrapper{
+        padding: 2rem 0 !important;
+    }
     .logo__img{
-        max-width: 230px !important;
+        max-width: 250px !important;
         height: auto;
     }
     .menu{
-        background-color: #000;
-        width: 100%;
+        background-color: $primary-color;
+        width: 85%;
         position: absolute;
+        height: 40vh !important;
         z-index: 100;
-        height: 100vh;
         bottom: 0;
-        left: 0;
         top: 12%;
         display: none;
+        border-top: 3px solid $tertiary-color;
+        padding: 0 1rem !important;
+        margin: 0 auto !important;
         ul{
             flex-direction: column;
             li a{
                 color: #fff !important;
                 line-height: 4;
             }
-            .login{
-                border: 1px solid $secondary-color !important;
+            .create{
+                background: #008E51 !important;
                 color: #fff !important;
+                width: 90% !important;
+                display: block !important;
+                padding: .01rem 2rem !important;
             }
         }
     }
