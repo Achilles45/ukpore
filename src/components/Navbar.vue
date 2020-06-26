@@ -135,7 +135,7 @@ export default {
 //MEDIA QUERIES
 @media only screen and (max-width: 1100px){
     .navbar__wrapper{
-        padding: 1rem 0 !important;
+        padding: 1rem 1rem !important;
     }
     .navbar__holder{
         padding: 0 1.2rem !important;

@@ -36,9 +36,11 @@
        <div class="footer__bottom">
           <div class="container">
               <div class="row">
-                  <div class="col-12">
+                  <div class="col-md-4"></div>
+                  <div class="col-md-4">
                       <small>Copylright &copy; 2020 <span class="wrap">African Development Crowdfund Limited | <a href="">Privacy Policy</a> | <a href="">Terms and Conditions</a></span></small>
                   </div>
+                  <div class="col-md-4"></div>
               </div>
           </div>
       </div>
@@ -81,7 +83,7 @@ export default {
     .footer__bottom{
         background: $primary-color;
         padding-top: .8rem;
-        padding-bottom: 1rem;
+        padding-bottom: 1rem 3rem;
         a{
             color:#fff;
         }
@@ -98,7 +100,7 @@ export default {
     }
     .footer__bottom{
         text-align: center;
-        padding: 1rem 0 !important;
+        padding: 1rem 20 !important;
         a{
             color:#fff;
         }
