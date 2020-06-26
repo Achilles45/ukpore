@@ -134,7 +134,10 @@ export default {
 //MEDIA QUERIES
 @media only screen and (max-width: 1100px){
     .navbar__wrapper{
-        padding: 2rem 0 !important;
+        padding: 1rem 0 !important;
+    }
+    .navbar__holder{
+        padding: 0 1.2rem !important;
     }
     .logo__img{
         max-width: 200px !important;
